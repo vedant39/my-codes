@@ -1,31 +1,53 @@
 public class threeDarey
 {
-    public static void main(String[] args) {
+    public static void main(String[] args) 
+    {
 
-        int nums [][][] = new int[3][4][5];
+        int nums [] [] [] [] = new int[5][7][9][10];
+        
 
-        int i,j,k;
-        for(i = 0 ; i < nums.length ; i++)
+        for (int i = 0 ; i < 5 ; i++)
         {
-            for ( j = 0 ; j < nums[i].length ; j++)
+            System.out.println("i = " +i); 
+            for(int j=0 ; j < 7 ; j++)
             {
-                for ( k = 0 ; k < nums [i][j].length ; k++)
-
-                    nums [i][j][k] = (int)(Math.random() * 10);
-            }
-        }
-
-        for (int n[][]: nums)
-        {
-            for (int m []: n)
-            {
-                for ( int o  : m)
+                System.out.println("  j = " + j); 
+                for (int k=0 ; k < 9 ; k++ ) 
                 {
-                    System.out.print(o + " ");
+                    System.out.print("    "); 
+                    for(int l=0 ; l < 10 ; l++)
+                    {
+                        nums [i][j][k][l] = (int)(Math.random() * 10 );
+                        System.out.print(nums [i][j][k][l]+" ");
+                    }  
+                    System.out.println(); 
                 }
                 System.out.println();
             }
             System.out.println();
         }
+
+    
+System.out.println("------------------------------------------------------------------------------------------------");
+
+// enhanced for loop 
+        for (int a[][][] : nums)
+        {
+            for (int b[][] : a)
+            {
+                for (int c []: b )
+                {
+                    System.out.println("    ");
+                    for ( int d : c )
+                    {
+                        System.out.print( "       "+d + " ");
+                    }
+                    System.out.println();
+                }
+            }
+            System.out.println();
+        }
+ 
     }
+
 }
