@@ -27,6 +27,6 @@ public class userarey
         students[2] = s3;
 
         for (Students student : students)
-            System.out.println(student.roll + ")" + student.Name + ":" + student.marks);
+            System.out.println(student.roll + ":" + student.Name + ":" + student.marks);
     }
 }
