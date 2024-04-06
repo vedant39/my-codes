@@ -26,8 +26,7 @@ public class threeDarey
             }
             System.out.println();
         }
-
-    
+ 
 System.out.println("------------------------------------------------------------------------------------------------");
 
 // enhanced for loop 
