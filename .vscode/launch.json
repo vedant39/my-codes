@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "russian",
+            "request": "launch",
+            "mainClass": "russian",
+            "projectName": "my codes_f6725044"
+        },
+        {
+            "type": "java",
             "name": "threeDarey",
             "request": "launch",
             "mainClass": "threeDarey",

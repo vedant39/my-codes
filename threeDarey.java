@@ -29,6 +29,8 @@ public class threeDarey
  
 System.out.println("------------------------------------------------------------------------------------------------");
 
+
+
 // enhanced for loop 
         for (int a[][][] : nums)
         {
